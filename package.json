@@ -1,5 +1,5 @@
 {
-  "name": "customerSupport",
+  "name": "customer-support",
   "private": true,
   "scripts": {
     "build": "turbo run build",

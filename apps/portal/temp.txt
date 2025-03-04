@@ -1,0 +1,28 @@
+Step 1: Url from localhost to google auth:
+
+https://accounts.google.com/o/oauth2/v2/auth?
+response_type=code
+&client_id=882715545827-l01vp9drneuvm6tdo1puqa01nhjk4m79.apps.googleusercontent.com
+&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fgoogle
+-------------------------------------------------
+http://localhost:3000/api/auth/callback/google
+-------------------------------------------------
+&code_challenge=ScdjPvvl9wPzWeJCXjzm7CDzfISeei8My9kha91W21M
+&code_challenge_method=S256
+&scope=openid+profile+email
+
+
+step 2: google response after login:
+
+http://localhost:3000/api/auth/callback/google?
+code=4%2F0AQSTgQF6Q9Xh2VDjI7k33jDC4s75sgV8oZV-H5A0lOPzzu28ZjURm9mwTrSSMGyQzkLBgg
+&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email
+-----------------------------------------------------
+email
+profile
+https://www.googleapis.com/auth/userinfo.profile
+openid
+https://www.googleapis.com/auth/userinfo.email
+-----------------------------------------------------
+&authuser=1
+&prompt=none
